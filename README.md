@@ -7,7 +7,7 @@ This algorithm is expected to enable ~40% latency reduction on the most of low-l
 
 Including:
 
-QCFS (activation quantizaiton + simulate longer to amortize noise);
+[QCFS](https://arxiv.org/pdf/2303.04347.pdf)(activation quantizaiton + simulate longer to amortize noise);
 
 QFFS (activation quantization + completely correct all noise by generating negative spikes in an event-based manner);
 
