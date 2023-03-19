@@ -6,6 +6,7 @@ The demo code demonstrates how a runtime optimization technique, Dynamic Confide
 This algorithm is expected to enable ~40% latency reduction on all current low-latency SNN algorithms whose essential technique is activation quantization and noise suppression on CIFAR-10 and ImageNet.
 
 Including:
+
 QCFS (activation quantizaiton + simulate longer to amortize noise);
 
 QFFS (activation quantization + completely correct all noise by generating negative spikes in an event-based manner);
