@@ -1,19 +1,19 @@
 # Dynamic-Confidence-in-Spiking-Neural-Networks
 The implementation of Dynamic Confidence on PyTorch.
 
-The demo code demonstrates how a runtime optimization technique, Dynamic Confidence, can help reduce the inferece latency further on low-latency SNNs. Our goal is to encourage the use of this technique across all SNNs, as it allows for varying simulation time steps for different input samples, rather than using a fixed time step for all inputs. This approach has proven to be remarkably effective and could greatly benefit SNNs in various applications.
+The demo code demonstrates how a runtime optimization technique, Dynamic Confidence, can help reduce the inferece latency further on low-latency SNNs. Our hope is to encourage the use of this technique when a SNN needs a lower latency, as it allows for varying simulation time steps for different input samples, rather than using a fixed time step for all inputs. This approach has proven to be remarkably effective and could greatly benefit SNNs in various applications.
 
-This algorithm is expected to enable ~40% latency reduction on the most of low-latency SNN algorithms whose essential technique is activation quantization and noise suppression on CIFAR-10 and ImageNet.
+This algorithm can enable ~40% latency reduction on low-latency SNN algorithms such as QCFS and QFFS, whose essential technique is activation quantization and noise suppression on CIFAR-10 and ImageNet.
 
 Including:
 
 [QCFS](https://arxiv.org/pdf/2303.04347.pdf)(activation quantizaiton + simulate longer to amortize noise);
 
-QFFS (activation quantization + completely correct all noise by generating negative spikes in an event-based manner);
+[QFFS](https://www.frontiersin.org/articles/10.3389/fnins.2022.918793/full) (activation quantization + completely correct all noise by generating negative spikes in an event-based manner);
 
-SRP (activation quantization + identify noise source by running SNN once, and correct the majority of noise when running this SNN for the second time);
+[SRP](https://arxiv.org/pdf/2302.02091.pdf) (activation quantization + identify noise source by running SNN once, and correct the majority of noise when running this SNN for the second time);
 
-COS (activation quantization + identify noise source by running SNN once, and correct the majority of noise when running this SNN for the second time);
+[COS](https://arxiv.org/pdf/2302.10685.pdf) (activation quantization + identify noise source by running SNN once, and correct the majority of noise when running this SNN for the second time);
 ...
 
 
