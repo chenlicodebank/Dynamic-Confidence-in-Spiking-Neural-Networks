@@ -1,7 +1,7 @@
 # Dynamic-Confidence-in-Spiking-Neural-Networks
 The implementation of Dynamic Confidence on PyTorch.
 
-The demo code demonstrates how a runtime optimization technique, Dynamic Confidence, can help reduce the inferece latency further on low-latency SNNs. Our goal is to encourage the use of this technique across all SNNs, as it allows for varying simulation time steps for different input samples, rather than using a fixed time step for all. This approach has proven to be remarkably effective and could greatly benefit SNNs in various applications.
+The demo code demonstrates how a runtime optimization technique, Dynamic Confidence, can help reduce the inferece latency further on low-latency SNNs. Our goal is to encourage the use of this technique across all SNNs, as it allows for varying simulation time steps for different input samples, rather than using a fixed time step for all inputs. This approach has proven to be remarkably effective and could greatly benefit SNNs in various applications.
 
 This algorithm is expected to enable ~40% latency reduction on the most of low-latency SNN algorithms whose essential technique is activation quantization and noise suppression on CIFAR-10 and ImageNet.
 
