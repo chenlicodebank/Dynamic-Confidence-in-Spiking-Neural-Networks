@@ -13,7 +13,7 @@ Dynamic Confidence can enable ~40% latency reduction on CIFAR-10 and ImageNet on
 * [SRP](https://arxiv.org/pdf/2302.02091.pdf) (activation quantization + identify noise source by running SNN once, and correct the majority of noise when running this SNN for the second time);
 
 * [COS](https://arxiv.org/pdf/2302.10685.pdf) (activation quantization + identify noise source by running SNN once, and correct the majority of noise when running this SNN for the second time);
-...
+* ...
 
 
 The demo code uses the setting of CIFAR-10, ResNet-20, QCFS. Other setting will be available soon.
