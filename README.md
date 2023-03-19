@@ -7,8 +7,11 @@ This algorithm is expected to enable ~40% latency reduction on all current low-l
 
 Including:
 QCFS (activation quantizaiton + simulate longer to amortize noise);
+
 QFFS (activation quantization + completely correct all noise by generating negative spikes in an event-based manner);
+
 SRP (activation quantization + identify noise source by running SNN once, and correct the majority of noise when running this SNN for the second time);
+
 COS (activation quantization + identify noise source by running SNN once, and correct the majority of noise when running this SNN for the second time);
 ...
 
