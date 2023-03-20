@@ -1,7 +1,20 @@
-# Dynamic-Confidence-in-Spiking-Neural-Networks
-The implementation of Dynamic Confidence on PyTorch.
+The demo code demonstrates using Dynamic Confidence to reduce the inferece latency further on low-latency SNNs. 
 
-The demo code demonstrates how a runtime optimization technique, Dynamic Confidence, can help reduce the inferece latency further on low-latency SNNs. Our aim is to provide a valuable technique for SNN researchers who want to improve the inference latency of their SNN algorithms further. Essentially, this technique allows for varying simulation time steps for different input samples, rather than a fixed time step for all inputs. This approach can provide quicker inference results for simple inputs and more reliable inference for challenging inputs by requesting longer simulation time steps.
+Dynamic Confidence allows for varying simulation time steps for different input samples, rather than a fixed time step for all inputs. Dynamic Confidence can provide quicker inference results for simple inputs and more reliable inference for challenging inputs by requesting longer simulation time steps.
+
+Our aim is to provide a valuable technique for SNN researchers who want to improve the inference latency of their SNN algorithms further. 
+
+
+There are four steps to use Dynamic Confidence,
+1. Choose any low-latency SNN algrotihm.
+2. Add the Dynamic Confidence module at the end of your SNN model.
+3. Calculate the only parameter, confidence threshold, in the Dynamic Confidence module.
+4. Run your SNN with/without Dynamic Confidence, to see how much latency and spike counts can be saved. 
+
+
+
+
+
 
 
 By applying Dynamic Confidence, low-latency SNN algorithms such as QCFS and QFFS can achieve a latency reduction of up to 40% on CIFAR-10 and ImageNet. It should be effective on other low-latency SNN algorithms that are based on QCFS and QFFS. See below for details.
