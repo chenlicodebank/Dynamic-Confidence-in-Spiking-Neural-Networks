@@ -1,14 +1,9 @@
-The demo code is about using Dynamic Confidence to reduce the inferece latency further on a given low-latency SNN. 
+The implementation of Dynamic Confidence on PyTorch.
 
-Our aim is to: 
-1. demonstrating the effectiveness of dynamic strategy (aka. dynamic networks, adaptive inference...) on reducing latency and spike counts of SNNs.
-2. providing demo codes, so researchers can quickly get started to use dynamic strategy, and get good understanding on what needs to be careful when applying dynamic strategy to SNNs.
+If you have developed an SNN model that has been carefully optimized for latency, but you're looking for even better performance, Dynamic Confidence can help. By integrating Dynamic Confidence at the output of your SNN model, you can reduce latency and spike counts by up to 50% on CIFAR-10 and 30% on ImageNet, without any impact on accuracy.
 
-Dynamic Confidence is particularly interesting when applying it to a SNN model that have already been carefully
-optimized in terms of latency. According to our experiments, Dynamic Confidence can bring about 50% latency and spike counts reduction on CIFAR-10, and 30% on ImageNet, without accuracy loss.
 
-Dynamic Confidence allows for varying simulation time steps for different input samples, rather than a fixed time step for all inputs. Dynamic Confidence can provide quicker inference results for simple inputs and more reliable inference for challenging inputs by requesting longer simulation time steps.
-
+The reason that Dynamic Confidence work so well is becasue that Dynamic Confidence is a simple but super effective runtime optimization technique tailored for SNNs. It allows for varying simulation time steps for different input samples, rather than a fixed time step for all inputs. This means that Dynamic Confidence can provide quicker inference results for simple inputs and more reliable inference for challenging inputs by requesting longer simulation time steps. Overall, Dynamic Confidence's ability to adjust simulation time steps based on input complexity is what makes it so effective at improving SNN model performance.
 
 There are four steps to use Dynamic Confidence:
 1. Choose any low-latency SNN algrotihm (e.g. [QCFS](https://arxiv.org/pdf/2303.04347.pdf), [QFFS](https://www.frontiersin.org/articles/10.3389/fnins.2022.918793/full)...or other low-latency algorithms based on them/similar to them).
@@ -17,8 +12,7 @@ There are four steps to use Dynamic Confidence:
 4. Run your SNN with/without Dynamic Confidence, to see how much latency and spike counts can be saved. 
 
 
-The demo code uses the setting of CIFAR-10, 2-bit quantized ResNet-20, QCFS (Please check log.txt for the expected output and simulation enviorments.
-). Other settings will be available soon. I am working on wrap Dynamic Confidence in a function to make it easier to use.
+The demo code uses the setting of CIFAR-10, 2-bit quantized ResNet-20, QCFS (Please check log.txt for the expected output and simulation enviorments.). Other settings will be available soon. I am working on wrap Dynamic Confidence in a function to make it easier to use.
 
 
 Related works:
