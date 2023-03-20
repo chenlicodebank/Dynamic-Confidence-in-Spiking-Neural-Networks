@@ -2,7 +2,7 @@ The demo code demonstrates using Dynamic Confidence to reduce the inferece laten
 
 Dynamic Confidence allows for varying simulation time steps for different input samples, rather than a fixed time step for all inputs. Dynamic Confidence can provide quicker inference results for simple inputs and more reliable inference for challenging inputs by requesting longer simulation time steps.
 
-Our aim is to provide a valuable technique for SNN researchers who has built their own low-latency SNN and want to further reduce its latency and spike counts. According to our experiments, Dynamic Confidence can bring about 50% latency and spike counts reduction on CIFAR-10, and 30% on ImageNet.
+Our aim is to provide a valuable technique for SNN researchers who has built their own low-latency SNN and want to further reduce its latency and spike counts. According to our experiments, Dynamic Confidence can bring about 50% latency and spike counts reduction on CIFAR-10, and 30% on ImageNet, without accuracy loss.
 
 
 
