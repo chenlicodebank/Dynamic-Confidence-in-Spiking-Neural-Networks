@@ -1,9 +1,13 @@
-The demo code demonstrates using Dynamic Confidence to reduce the inferece latency further on a given low-latency SNN. 
+The demo code is about using Dynamic Confidence to reduce the inferece latency further on a given low-latency SNN. 
+
+Our aim is to: 
+1. demonstrating the effectiveness of dynamic strategy (aka. dynamic networks, adaptive inference...) on reducing latency and spike counts of SNNs.
+2. providing demo codes, so researchers can quickly get started to use dynamic strategy, and get good understanding on what needs to be careful when applying dynamic strategy to SNNs.
+
+Dynamic Confidence is particularly interesting when applying it to a SNN model that have already been carefully
+optimized in terms of latency. According to our experiments, Dynamic Confidence can bring about 50% latency and spike counts reduction on CIFAR-10, and 30% on ImageNet, without accuracy loss.
 
 Dynamic Confidence allows for varying simulation time steps for different input samples, rather than a fixed time step for all inputs. Dynamic Confidence can provide quicker inference results for simple inputs and more reliable inference for challenging inputs by requesting longer simulation time steps.
-
-Our aim is to provide a valuable technique for SNN researchers who has built their own low-latency SNN and want to further reduce its latency and spike counts. According to our experiments, Dynamic Confidence can bring about 50% latency and spike counts reduction on CIFAR-10, and 30% on ImageNet, without accuracy loss.
-
 
 
 There are four steps to use Dynamic Confidence:
