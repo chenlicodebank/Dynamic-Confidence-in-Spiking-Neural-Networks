@@ -13,7 +13,7 @@ There are four steps to use Dynamic Confidence:
 4. Run your SNN with/without Dynamic Confidence, to see how much latency and spike counts can be saved. 
 
 
-The demo code uses the setting of CIFAR-10, ResNet-20, QCFS (Please check log.txt for the expected output and simulation enviorments.
+The demo code uses the setting of CIFAR-10, 2-bit quantized ResNet-20, QCFS (Its accuracy is Please check log.txt for the expected output and simulation enviorments.
 ). Other settings will be available soon.
 
 
@@ -27,5 +27,6 @@ Related works:
 
 * [COS](https://arxiv.org/pdf/2302.10685.pdf) (activation quantization + identify noise source by running SNN once, and correct the majority of noise when running this SNN for the second time);
 * ...
+
 
 
