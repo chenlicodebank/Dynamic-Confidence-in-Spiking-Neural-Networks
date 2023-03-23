@@ -36,7 +36,7 @@ Related works:
 For building low-latency SNNs by ANN-to-SNN conversion, the key is activation quantizaiton + noise suppression + better training techniques + implement max-pooling to prevent MAC. Here we give some suggestions about how to do these [four steps](https://www.frontiersin.org/articles/10.3389/fnins.2022.918793/full) well:
 * activation quantizaiton. Directly adopting a ANN quantization algorithms, do not develop a quantization algorithm from scratch.
 * noise suppression. Please check the paper listed above to see how SNN researchers solve this problem and its pros and cons. You can develop your own noise suppression as well. 
-* better training techniques. Refer ANN reserch to boost your SNN\`s accuracy. Some SNN reserch also provides some good training techniques and tricks, such as [this](https://github.com/putshua/SNN_conversion_QCFS).
+* better training techniques. Refer SOTA ANN reserch to find tricks boost your SNN\`s accuracy by improving ANN accuracy. Some SNN reserch also provides some good training techniques and tricks, such as [this](https://github.com/putshua/SNN_conversion_QCFS).
 * implement max-pooling to prevent MAC. You can just use average-pooling and ignore this step if you do not plan to run your SNN algorithms on any neuromorphic hardware.
 
 
