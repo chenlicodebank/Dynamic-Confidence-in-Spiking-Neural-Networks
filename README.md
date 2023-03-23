@@ -13,7 +13,7 @@ There are four steps to use Dynamic Confidence:
 1. Choose any low-latency SNN algrotihm (e.g. [QCFS](https://arxiv.org/pdf/2303.04347.pdf), [QFFS](https://www.frontiersin.org/articles/10.3389/fnins.2022.918793/full)...or other low-latency ANN-to-SNN conversion algorithms based on them/similar to them. We also intuitively think Dynamic Confidence can work on SNNs built by surrogate gradients).
 2. Add the Dynamic Confidence module at the end of your SNN model.
 3. Calculate the confidence threshold to
-balance between the latency and accuracy (Do not worry too much about it, we promise that it is the only parameter needed in Dynamic Confidence and it is super insensitive to its value. In fact, finding the most appropriate confidence threshold is the most interesting part of the technique!).
+balance between the latency and accuracy (Do not worry too much about it, we promise that it is the only parameter needed in Dynamic Confidence and it is super insensitive to its value after using the confidence smooth technique proposed in ourp aper. In fact, finding the most appropriate confidence threshold is the most interesting part of the technique! There are various way to do it!).
 4. Run your SNN with/without Dynamic Confidence, to see how much latency and spike counts can be saved, and whether the accuracy is compromised or not. 
 
 # Code details
