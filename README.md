@@ -29,7 +29,7 @@ Related works:
 * [SRP](https://arxiv.org/pdf/2302.02091.pdf) (activation quantization + identify noise source by running SNN once, and correct the majority of noise when running this SNN for the second time);
 
 * [COS](https://arxiv.org/pdf/2302.10685.pdf) (activation quantization + identify noise source by running SNN once, and correct the majority of noise when running this SNN for the second time);
-* ...
+* There are several other SNN algorithms proprosed in the last two years also have the same core idea. These algorithms can also benefited from Dynamic Confidence.
 
 
 # Others
