@@ -21,7 +21,7 @@ balance between the latency and accuracy (Do not worry too much about it, we pro
 4. Run your SNN with/without Dynamic Confidence, to see how much latency and spike counts can be saved, and whether the accuracy is compromised or not. 
 
 # Code details
-The demo code uses the setting of CIFAR-10, 2-bit quantized ResNet-20, ANN-to-SNN conversion, QCFS. It runs an SNN two times, with/without Dynamic Confidence, respectively. Please check log.txt for the expected output and simulation enviorments. Other settings will be available soon. I am working on wrap Dynamic Confidence in a function in my spare time, to make it easier to use.
+The demo code uses the setting of CIFAR-10, 2-bit quantized ResNet-20, ANN-to-SNN conversion, QCFS. It runs an SNN two times, with/without Dynamic Confidence, respectively. Results show 63% less simulation time and 57% reduction on spike counts/image, with the same accuracy. Please check log.txt for the detailed output and simulation enviorments. Other settings will be available soon. I am working on wrap Dynamic Confidence in a function in my spare time, to make it easier to use.
 
 
 Related works:
