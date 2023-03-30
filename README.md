@@ -3,7 +3,7 @@
 # Prologue
 These probabilities are a much richer indication of how
 the old model generalizes than just the label it thinks is most likely
-- Geoffrey Hinton
+\- Geoffrey Hinton
 
 # When to use
 If you have developed an SNN model that has been carefully optimized for latency, but you're looking for even better performance, Dynamic Confidence can help. By integrating Dynamic Confidence at the output of your SNN model, you can reduce latency and spike counts by up to 50% on CIFAR-10 and 30% on ImageNet, without any impact on accuracy.
