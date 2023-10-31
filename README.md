@@ -1,4 +1,4 @@
-# The implementation of [Dynamic Confidence]([https://arxiv.org/abs/2303.10276](https://openaccess.thecvf.com/content/ICCV2023/html/Li_Unleashing_the_Potential_of_Spiking_Neural_Networks_with_Dynamic_Confidence_ICCV_2023_paper.html)) (ICCV2023) on PyTorch.
+# The implementation of [Dynamic Confidence](([https://openaccess.thecvf.com/content/ICCV2023/html/Li_Unleashing_the_Potential_of_Spiking_Neural_Networks_with_Dynamic_Confidence_ICCV_2023_paper.html])) (ICCV2023) on PyTorch.
 
 # Prologue
 These probabilities are a much richer indication of how
